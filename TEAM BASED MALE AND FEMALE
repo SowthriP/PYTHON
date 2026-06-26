@@ -1,0 +1,14 @@
+a=["sandy","ajay","jolie","sarathy","kylie","kim","surwesh"]
+b=['M','M','F','M','F','F','M']
+male=[]
+female=[]
+for i in range(len(a)):
+    if b[i]=='M':
+        male.append(a[i])
+    else:
+        female.append(a[i])
+pos=1
+for i in male:
+    for j in female:
+        print("team {} : {} AND {}".format(pos,i,j))
+        pos+=1
