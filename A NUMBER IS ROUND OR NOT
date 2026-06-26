@@ -1,0 +1,16 @@
+n = int(input("Enter the number: "))
+x = []
+
+while True:
+    if n in x and n!=1:
+        print("not round")
+        break
+
+    if n == 1:
+        print("round")
+        break
+
+    x.append(n)
+    n = sum(int(i) ** 2 for i in str(n))
+
+print(x)
