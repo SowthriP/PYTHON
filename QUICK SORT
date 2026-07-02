@@ -1,0 +1,14 @@
+def quicksort(a):
+    if len(a)>1:
+        pivot= -1
+        right=[]
+        left=[]
+        for i in a:
+            if a[i]<a[pivot]:
+                left.append(a[i])
+            else:
+                right.append(a[i])
+    return quicksort(left)+[pivot]+quicksort(right)
+a=[3,4,5,8,6,7]
+quicksort(a)
+print(a)
